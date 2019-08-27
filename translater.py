@@ -50,10 +50,10 @@ def create_table(connect):
     cursor.execute(sql)
     connect.commit()
 
-#def get_data(object):
-    #data = json.dumps(object)
+def get_data(object):
+    data = json.dumps(object)
 
-    #return data
+    return data
 
 def send_answer(element, connect):
     sql = f"""INSERT INTO "Translation" (
